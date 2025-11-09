@@ -27,6 +27,10 @@ cp /vagrant/config/mluna.test.dns /var/lib/bind/
 echo "Copiando fichero de zona inversa ------------------------------------------------ "
 cp /vagrant/config/mluna.test.rev /var/lib/bind/
 
+# Reiniciamos BIND9 para que cargue todos los nuevos ficheros de configuración
+echo "Reiniciando BIND9 para aplicar la configuración------------------------------------------------"
+systemctl restart bind9
+
 #Creacion de usuarios para FTP 
 echo "Creando usuarios FTP (luis, maria, miguel) ------------------------------------------------"
 useradd -m luis
@@ -58,7 +62,3 @@ cp /vagrant/config/vsftpd.chroot_list /etc/vsftpd.chroot_list
 #Reiniciamos VSFTPD para aplicar toda la configuracion
 echo "Reiniciando VSFTPD------------------------------------------------"
 systemctl restart vsftpd
-
-# Reiniciamos BIND9 para que cargue todos los nuevos ficheros de configuración
-echo "Reiniciando BIND9 para aplicar la configuración------------------------------------------------"
-systemctl restart bind9
