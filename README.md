@@ -57,11 +57,11 @@ Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide qu
 
  - **1. Instalacion cliente _(FileZilla)_**
 
- Vamos a usar FileZilla, que es el más famoso, gratis y fácil de usar.
+ Vamos a usar FileZilla, que es el más famoso, gratis y fácil de usar
 
-    1. Entramos en la web oficial (filezilla-project.org)
+ 1. Entramos en la web oficial (filezilla-project.org)
 
-    2. Descargamos el instalador para Windows e instalamos (Dale a "Siguiente" a todo)
+ 2. Descargamos el instalador para Windows e instalamos (Dale a "Siguiente" a todo)
 
  Ahora que tenemos el FileZilla lo abrimos y empezamos con los siguientes pasos
 
@@ -69,4 +69,40 @@ Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide qu
 
  - **2. Preparamos los archivos del PC**
 
- 
+ La practica nos pide crear una carpeta _pruebasFTP_ con un fichero llamado _datos1.txt_
+
+ <img src="doc/img/creacion-documentos-anfitrion.png>
+
+ Ahora escribimos lo que sea en el documento de texto
+
+ <img src="doc/img/code-datos1.png">
+
+ - **3. Nos conectamos a ftp.cica.es**
+
+ En FileZilla nos vamos a conexion rapida y lo rellenamos con lo siguiente:
+
+ <img src="doc/img/conexion-fica.png">
+
+ > Usuario y contraseña los dejamos en blanco para que sea coneion anonima
+
+ Ahora al darle al boton de conexion rapido veremos que estamos conectados a cica 
+
+ <img src="doc/img/fica-conectado.png">
+
+ - **4. Descargar el fichero**
+
+ En el panel de la derecha ("Sitio remoto"), buscamos la carpeta pub y hacemos doble clic en ella.
+
+ <img src="doc/img/pub.png">
+
+ Dentro de pub buscamos el fichero que se llama check
+
+ <img src="doc/img/check.png">
+
+ Hacemos doble clic sobre el fichero check.
+
+ Ahora veremos que se descarga y aparece en tu panel izquierdo _(carpeta pruebasFTP)_
+
+ <img src="doc/img/tranferencia.png">
+
+ - **5. Intentar subir un fichero**
