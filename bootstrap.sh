@@ -27,6 +27,25 @@ cp /vagrant/config/mluna.test.dns /var/lib/bind/
 echo "Copiando fichero de zona inversa ------------------------------------------------ "
 cp /vagrant/config/mluna.test.rev /var/lib/bind/
 
+#Creacion de usuarios para FTP 
+echo "Creando usuarios FTP (luis, maria, miguel) ------------------------------------------------"
+useradd -m luis
+useradd -m maria
+useradd -m miguel
+
+#Asignamos contraseñas (igual que el nombre de usuario)
+echo "luis:luis" | chpasswd
+echo "maria:maria" | chpasswd
+echo "miguel:miguel" | chpasswd
+
+#Creamos ficheros de prueba para los usuarios
+echo "Creando ficheros de prueba para luis y maria ------------------------------------------------"
+touch /home/luis/luis{1,2}.txt
+chown luis:luis /home/luis/luis*.txt
+
+touch /home/maria/maria{1,2}.txt
+chown maria:maria /home/maria/maria*.txt
+
 # Reiniciamos BIND9 para que cargue todos los nuevos ficheros de configuración
-echo "Reiniciando BIND9 para aplicar la configuración..."
+echo "Reiniciando BIND9 para aplicar la configuración------------------------------------------------"
 systemctl restart bind9

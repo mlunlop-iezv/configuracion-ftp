@@ -115,4 +115,17 @@ Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide qu
 
  Una vez comprobado nos desconactamod del servidro cica (En la barra de herramientas buscamos _Servidor_ le damos y se despliege un menu y le clickamos a _Desconectar_)
 
- 
+## 3. Instalación y configuración del servidor vsftpd sobre Linux
+
+Como en el primer paso ya lo hemos echo (instalacion de vsftpd) en el primer paso vamos por lo siguiente
+
+- ### 3.1 Creacion de Usuario y Ficheros en _bootstrap.sh_
+
+Vamos a añadir al _bootstrap.sh_ los comandos para que cree automáticamente los usuarios (luis, maria, miguel) y sus ficheros de prueba
+
+<img src="doc/img/creacion-usuarios.png">
+
+- ### 3.2 Creacion del Fichero _config/vsftpd.conf_
+
+Vamos a la carpeta config y creamos un nuevo fichero llamado _vsftpd.conf_ y dentro de este escribmos lo siguiente:
+
