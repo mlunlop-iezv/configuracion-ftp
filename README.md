@@ -83,7 +83,7 @@ Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide qu
 
  <img src="doc/img/conexion-fica.png">
 
- > Usuario y contraseña los dejamos en blanco para que sea coneion anonima
+ > Usuario y contraseña los dejamos en blanco para que sea conexion anonima
 
  Ahora al darle al boton de conexion rapido veremos que estamos conectados a cica 
 
@@ -106,3 +106,13 @@ Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide qu
  <img src="doc/img/tranferencia.png">
 
  - **5. Intentar subir un fichero**
+
+ Pinchamos en _datos1.txt_ y lo arrastramos al panel de la derecha _(servidor)_ y veremos el siguiente fallo
+
+ <img src="doc/img/error.png">
+
+ > Este fallo se debe a que no tenemos permisos al habernos conectado de manera anonima
+
+ Una vez comprobado nos desconactamod del servidro cica (En la barra de herramientas buscamos _Servidor_ le damos y se despliege un menu y le clickamos a _Desconectar_)
+
+ 
