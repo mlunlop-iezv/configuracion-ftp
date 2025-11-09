@@ -51,7 +51,7 @@ touch /home/maria/maria{1,2}.txt
 chown maria:maria /home/maria/maria*.txt
 
 # --- Creacion de Certificado SSL para FTPS ---
-echo "Generando certificado SSL autofirmado..."
+echo "Generando certificado SSL autofirmado------------------------------------------------"
 # Creamos el certificado y la clave en un solo fichero .pem
 # Lo adaptamos a nuestro dominio mluna.test 
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \

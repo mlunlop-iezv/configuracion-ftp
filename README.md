@@ -210,3 +210,22 @@ Abrimos el fichero vsftpd.conf y al final del todo escribimos:
 
 <img src="doc/img/ssh-vsftpd-config.png">
 
+- ## 4.3 Comprobaciones
+
+Primero antes de nada hacemos un:
+
+```
+vagrant provision
+```
+
+Ahora hacemos una conexion ssh y comprobamos el estado del ftp:
+
+<img src="doc/img/comprobacion-ssh.png>
+
+> Como podemos ver el servicio esta activo
+
+- ## Comprobacion con FileZilla
+
+
+
+
