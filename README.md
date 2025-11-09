@@ -53,7 +53,7 @@ Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide qu
 
  <img src="doc/img/comprobacion-nslookup.png">
 
-## 2. Configuracion inicial
+## 2. Uso del cliente FTP gráfico
 
  - **1. Instalacion cliente _(FileZilla)_**
 
