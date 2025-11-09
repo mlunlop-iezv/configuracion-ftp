@@ -129,3 +129,5 @@ Vamos a añadir al _bootstrap.sh_ los comandos para que cree automáticamente lo
 
 Vamos a la carpeta config y creamos un nuevo fichero llamado _vsftpd.conf_ y dentro de este escribmos lo siguiente:
 
+<img src="doc/img/creacio-vsftpd.conf.png">
+
