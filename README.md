@@ -194,3 +194,11 @@ Abrimos FileZilla y hacemos varias pruebas
 
  > Al hacer click a los dos puntos (..) no nos deja ver todos los archivos por lo que esta enjaulado
 
+## 4. Configuración del servidor VSFTPD Seguro (FTPS)
+
+- ## 4.1 Crear certificado SSL
+
+Vamos a crear uno autofirmado usando openssl asi que modificaremos el _bootstrap.sh_ inserteremo el siguiente codigo antes de la liena _cp /vagrant/config/vsftpd.conf ..._ porque queremos tener el certificado antes de que el servicio lo intente leer:
+
+<img src="doc/img/bootstrap-ssh.png">
+

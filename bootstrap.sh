@@ -50,6 +50,15 @@ chown luis:luis /home/luis/luis*.txt
 touch /home/maria/maria{1,2}.txt
 chown maria:maria /home/maria/maria*.txt
 
+# --- Creacion de Certificado SSL para FTPS ---
+echo "Generando certificado SSL autofirmado..."
+# Creamos el certificado y la clave en un solo fichero .pem
+# Lo adaptamos a nuestro dominio mluna.test 
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+-keyout /etc/ssl/certs/mluna.test.pem \
+-out /etc/ssl/certs/mluna.test.pem \
+-subj "/CN=ftp.mluna.test"
+
 #Configuracion de VSFTPD 
 echo "Copiando configuracion de VSFTPD------------------------------------------------"
 # Copiamos el fichero de config principal
