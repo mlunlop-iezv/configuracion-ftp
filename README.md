@@ -131,3 +131,21 @@ Vamos a la carpeta config y creamos un nuevo fichero llamado _vsftpd.conf_ y den
 
 <img src="doc/img/creacio-vsftpd.conf.png">
 
+- ### 3.3: Crear Ficheros Auxiliares
+En el fichero de arriba, hemos hecho referencia a dos ficheros nuevos (vsftpd.banner_anon y vsftpd.chroot_list) por lo que hay que crearlos
+
+ - **1. Fichero de Banner Anónimo:**
+
+ Creamos un fichero en config/ llamado vsftpd.banner-anon y escribimos:
+
+ <img src="doc/img/banner-anon.png">
+
+ - **2. Fichero Chroot**
+
+ Creamos un fichero en config/ llamado vsftpd.chroot_list y escribimos:
+
+ <img src="doc/img/maria.png">
+
+ > Escribimos el nombre del usuario que no queremos enjaular
+
+ 
