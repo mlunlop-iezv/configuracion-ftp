@@ -3,13 +3,12 @@
 
 **Repositorio:** [_github.com/mlunlop-iezv/configuracion-ftp_](https://github.com/mlunlop-iezv/configuracion-ftp)
 
-# Indice
 # Índice
-- [Práctica FTP: Configuración de un servidor](#Práctica-FTP-Configuración-de-un-servidor)
-  - [1. Configuracion inicial](#1-Configuracion-inicial)
-  - [2. Uso del cliente FTP gráfico](#2-Uso-del-cliente-FTP-gráfico)
-  - [3. Instalación y configuración del servidor vsftpd sobre Linux](#3-Instalación-y-configuración-del-servidor-vsftpd-sobre-Linux)
-  - [4. Configuración del servidor VSFTPD Seguro (FTPS)](#4-Configuración-del-servidor-VSFTPD-Seguro-FTPS) 
+- [1. Configuracion inicial](#1-Configuracion-inicial)
+- [2. Uso del cliente FTP gráfico](#2-Uso-del-cliente-FTP-gráfico)
+- [3. Instalación y configuración del servidor vsftpd sobre Linux](#3-Instalación-y-configuración-del-servidor-vsftpd-sobre-Linux)
+- [4. Configuración del servidor VSFTPD Seguro (FTPS)](#4-Configuración-del-servidor-VSFTPD-Seguro-FTPS) 
+
 
 Antes de comenzar vamos a corregir fallos de la practica anterior ya que nos baseremos en esta para hacer este trabajo.
 
