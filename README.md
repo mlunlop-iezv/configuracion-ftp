@@ -202,3 +202,11 @@ Vamos a crear uno autofirmado usando openssl asi que modificaremos el _bootstrap
 
 <img src="doc/img/bootstrap-ssh.png">
 
+- ## 4.2 Modificar config/vsftpd.conf para SSL
+
+Ahora le tenemos que decir a VSFTPD que active el modo seguro y para que use el certificado que acabamos de crear
+
+Abrimos el fichero vsftpd.conf y al final del todo escribimos:
+
+<img src="doc/img/ssh-vsftpd-config.png">
+
