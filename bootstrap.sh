@@ -46,6 +46,19 @@ chown luis:luis /home/luis/luis*.txt
 touch /home/maria/maria{1,2}.txt
 chown maria:maria /home/maria/maria*.txt
 
+#Configuracion de VSFTPD 
+echo "Copiando configuracion de VSFTPD------------------------------------------------"
+# Copiamos el fichero de config principal
+cp /vagrant/config/vsftpd.conf /etc/vsftpd.conf
+# Copiamos el fichero del banner anonimo
+cp /vagrant/config/vsftpd.banner_anon /etc/vsftpd.banner_anon
+# Copiamos la lista de usuarios no enjaulados
+cp /vagrant/config/vsftpd.chroot_list /etc/vsftpd.chroot_list
+
+#Reiniciamos VSFTPD para aplicar toda la configuracion
+echo "Reiniciando VSFTPD------------------------------------------------"
+systemctl restart vsftpd
+
 # Reiniciamos BIND9 para que cargue todos los nuevos ficheros de configuración
 echo "Reiniciando BIND9 para aplicar la configuración------------------------------------------------"
 systemctl restart bind9

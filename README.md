@@ -148,4 +148,19 @@ En el fichero de arriba, hemos hecho referencia a dos ficheros nuevos (vsftpd.ba
 
  > Escribimos el nombre del usuario que no queremos enjaular
 
- 
+- ### 3.3 Actualizar _bootstrap.sh_
+
+Ahora tenemos que modificar el _bootstrap.sh_ para que que copue los archivos nuevos y reinicie el servicio FTP:
+
+<img src="doc/img/actualizacion-bootstrapsh.png">
+
+- ## 3.4 Comprobaciones
+
+Ahora vamos a comrpobar que lo hemos echo bien, primeros intalamos todo haceindo un 
+
+```
+vagrant provision
+```
+
+Ahora cuando termine entramos a la maquina y hacemos las comprobaciones
+
