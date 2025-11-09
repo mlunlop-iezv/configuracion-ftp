@@ -172,3 +172,25 @@ Ahora en este captura podemos comprobar el directori _/srv/ftp_, comprobamos el 
 
 <img src="doc/img/otras-comprobaciones.png">
 
+- ## 3.6 Comprobacion FileZilla
+
+Abrimos FileZilla y hacemos varias pruebas
+
+ - **1. Prueba anonima**
+
+ <img src="doc/img/conexion-anon.png">
+
+ > Como se puede ver se puede conectar y al intentar subir un archivo da erro puesto que somos anonimos
+
+ - **2. Prueba _maria_ (No enjaulada)**
+
+ <img src="doc/img/conexion-maria.png">
+
+ > Al hacer click a los dos puntos (..) deja ver todos los archivos por lo que no esta enjaulada
+
+ - **3. Prueba _luis_ (esnjauladO)**
+
+ <img src="doc/img/conexion-luis.png">
+
+ > Al hacer click a los dos puntos (..) no nos deja ver todos los archivos por lo que esta enjaulado
+
