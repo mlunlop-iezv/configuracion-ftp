@@ -17,7 +17,7 @@ Ahora si comenzamos la explicacion de la configuracion de un servidor FTP.
 
 Como estamos reutilizando la maquina DNS de la practica anterior la ip ya esta configurada _(192.168.56.8)_ y el nombre de dominio tambien _(mluna.test)_ a si que vamos a pasar a configurar el DNS
 
-- ### Configuracion DNS 
+- ### 1.1 Configuracion DNS 
 
 Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide que ftp.example.com sea un alias. Nosotros haremos lo mismo: ftp.mluna.test será un alias de nuestro servidor debian.mluna.test
 
@@ -32,5 +32,41 @@ Ahora vamos a hacer que el DNS sepa quien es ftp.mluna.test. La practica pide qu
  <img src="doc/img/validacion-dns.png">
 
  > Como vemos nos da el OK por lo que funciona
+
+ - **Actualización del bootstrap.sh**
+
+ Ahora tenemos que decirle al bootstrap.sh que instale el programa del servidor FTP (vsftpd).
+
+ Editamos el bootstrap.sh y en la línea donde instalamos BIND9, añadimos vsftpd:
+
+ <img src="doc/img/instalacion-vsftpd.png">
+
+ - **Comprobacion del DNS**
+
+ Para aplicar todos estos cambios, lanzamos el provision desde nuestra terminal:
+
+ ```
+ vagrant provision
+ ```
+
+ Una vez echo el provision comprobamos que funcione desde nuestro anfitrion:
+
+ <img src="doc/img/comprobacion-nslookup.png">
+
+## 2. Configuracion inicial
+
+ - **1. Instalacion cliente _(FileZilla)_**
+
+ Vamos a usar FileZilla, que es el más famoso, gratis y fácil de usar.
+
+    1. Entramos en la web oficial (filezilla-project.org)
+
+    2. Descargamos el instalador para Windows e instalamos (Dale a "Siguiente" a todo)
+
+ Ahora que tenemos el FileZilla lo abrimos y empezamos con los siguientes pasos
+
+ <img src="doc/img/instalacion-filezilla.png">
+
+ - **2. Preparamos los archivos del PC**
 
  

@@ -5,7 +5,7 @@ apt-get update
 
 #Instalamos BIND9
 echo "Instalando bind9 ------------------------------------------------ "
-apt-get install -y bind9 bind9utils bind9-doc
+apt-get install -y bind9 bind9utils bind9-doc vsftpd
 
 #Aplicar la configuracion para siempre usar el iPv4
 echo "Aplicando configuracion para siempre usar iPv4 ------------------------------------------------ "
