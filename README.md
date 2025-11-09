@@ -220,12 +220,23 @@ vagrant provision
 
 Ahora hacemos una conexion ssh y comprobamos el estado del ftp:
 
-<img src="doc/img/comprobacion-ssh.png>
+<img src="doc/img/comprobacion-ssh.png">
 
 > Como podemos ver el servicio esta activo
 
-- ## Comprobacion con FileZilla
+- ##  4.4 Comprobacion con FileZilla
 
+En FileZilla vamos a "Archivo" > "Gestor de Sitios...". Le damos a crear un "Nuevo Sitio" y lo llamamos "FTP Seguro (mluna.test)". Rellenamos  la pestaña "General" con estos datos:
+
+<img src="doc/img/gestor-de-sitios.png">
+
+Le damos a conectar y nos saldra la siguiente ventana:
+
+<img src="doc/img/aviso-certificado.png">
+
+> Aqui marcamos la casilla "Confiar siempre en este certificado en futuras sesiones" y aceptamos
+
+Ahora podemos ver que estamos conectados por lo que ha funcionado perfectamente
 
 
 
